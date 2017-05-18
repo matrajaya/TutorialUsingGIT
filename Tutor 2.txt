@@ -35,7 +35,9 @@ Kemudian kita buat commit project nya, misal disini saya kasih commit “versi 1.0
 
 Setelah kita buat commit untuk project nya, sekarang kita remote repository yang kita buat tadi, tentunya kita menggunakan kunci HTTP yang ada pada repository tadi, kalo ane kan tadi contoh nya http://github.com/acchoblues/APeK.git , ketikan
 
- Git remote add origin http://github.com/acchoblues/APeK.git 
+ Git remote add origin http://github.com/acchoblues/APeK.git --> 
+jika error berarti sudah ada maka pakai ini --> 
+$ git remote set-url origin http://github.com/acchoblues/APeK.git
 
 Setelah me-remote repository kita tadi, sekarang kita pull project nya, ketikan
 
