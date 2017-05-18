@@ -1,0 +1,35 @@
+$ git config --global user.name "John Doe"
+$ git config --global user.email "johndoe@example.com"
+
+$ git init
+
+$ git status
+
+$ git create mynewrepo
+
+$ git remote add origin git@github.com:username/new_repo
+$ git push -u origin master
+
+$ git add *.c
+$ git add LICENSE
+$ git commit -m 'initial project version'
+
+
+$ git clone https://github.com/libgit2/libgit2
+
+$ git clone https://github.com/libgit2/libgit2 mylibgit
+
+
+…or create a new repository on the command line
+
+echo "# FirstCodeEntityFramework" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/matrajaya/FirstCodeEntityFramework.git
+git push -u origin master
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/matrajaya/FirstCodeEntityFramework.git
+git push -u origin master

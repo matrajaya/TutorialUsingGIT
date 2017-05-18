@@ -1,0 +1,46 @@
+ Setelah kita mempunya akun GitHub dan mengistall software git maka kita bisa langsung meng upload project kita.
+
+    Buatlah repository di GitHub dengan mengklik icon repo "Create new repository".
+
+    Kemudian beri nama repository nya lalu beri deskripsi untuk repository yang kita buat jika perlu, kemudian setting public/private, kalau public berarti bisa di akses oleh semua orang, kemudian centang "initialize this repository with a README" dan tambahkan kategori repository jila perlu.
+
+    kemudian klik "create repository".
+    Jika repository berhasil dibuat, anda akan di berikan kunci akases berupa HTTP/SSH, ini yang akan kita gunakan untuk remote repository dari software GIT. Misal saya punya kunci HTTP http://github.com/acchoblues/APeK.git
+
+    Setelah anda berhasil membiat repository sekarang klik kanan pada folder project yang akan di upload.
+
+    Klik kanan pada project klik "Git Bash".
+
+    Kemudian akan muncul command prompt / CMD
+
+    Jika anda baru pertama kali meggunakan software GIT, sebaiknya konfigurasi username dan email dulu.
+
+    Ketik
+
+ Git config --global user.name "username anda" 
+
+ Git config --global user.email isi_dengan_email_anda@ymail.com 
+
+Setelah melakukan konfigurasi username dan email, sekarang kita lakukan inisiasi, ketikan
+
+ Git init 
+
+Kemudian kita tambahkan semua file yang ada dalam folder project kita, ketikan
+
+ Git add * 
+
+Kemudian kita buat commit project nya, misal disini saya kasih commit “versi 1.0.0” , ketikan
+
+ Git commit –m "versi 1.0.0" 
+
+Setelah kita buat commit untuk project nya, sekarang kita remote repository yang kita buat tadi, tentunya kita menggunakan kunci HTTP yang ada pada repository tadi, kalo ane kan tadi contoh nya http://github.com/acchoblues/APeK.git , ketikan
+
+ Git remote add origin http://github.com/acchoblues/APeK.git 
+
+Setelah me-remote repository kita tadi, sekarang kita pull project nya, ketikan
+
+ Git pull origin master 
+
+Terakhir kita kirim project kita ke repository kita, ketikan
+
+ Git push origin master 
